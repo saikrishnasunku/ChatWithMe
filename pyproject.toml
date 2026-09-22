@@ -1,0 +1,25 @@
+[project]
+name = "chatwithme"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "saikrishnasunku", email = "svskrishna99@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "langchain>=1.4.2",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-openai>=1.6.3",
+    "langgraph>=1.2.12",
+    "mcp<2",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+chatwithme = "chatwithme:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
